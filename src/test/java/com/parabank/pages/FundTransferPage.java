@@ -40,6 +40,7 @@ public class FundTransferPage extends BasePage{
 
     // transfer success
     public boolean hasFundTransferSuccess(){
+        General.waitForDomStable();
         return getWebElement(By.className("title")).getText().trim().contains(ParaBankString.TRANSFER_SUCCESS);
     }
 

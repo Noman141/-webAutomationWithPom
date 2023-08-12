@@ -25,4 +25,21 @@ public class HomePage extends BasePage{
         getWebElement(By.linkText("Transfer Funds")).click();
         return getInstance(FundTransferPage.class);
     }
+
+    //Update Contact Info
+    public UpdateContactInfoPage clickUpdateContactInfoLink(){
+        getWebElement(By.linkText("Update Contact Info")).click();
+        return getInstance(UpdateContactInfoPage.class);
+    }
+
+    //Request Loan
+    public RequestLoanPage clickRequestLoanLink(){
+        getWebElement(By.linkText("Request Loan")).click();
+        return getInstance(RequestLoanPage.class);
+    }
+    //Account Overview
+    public AccountOverviewPage clickAccountPageLink(){
+        getWebElement(By.linkText("Accounts Overview")).click();
+        return getInstance(AccountOverviewPage.class);
+    }
 }
