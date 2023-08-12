@@ -16,7 +16,7 @@ public class OpenNewAccountTestCase  extends BaseTest{
         HomePage homePage = loginPage.loginWithCredentials(getUsername(), getPassword());
         Assert.assertTrue(homePage.hasLogOutLink());
         OpenNewAccountPage openNewAccountPage = homePage.clickNewOpenAccountLink()
-                .openNewAccountType(1)
+                .openNewAccountType(0)
                 .clickOpenNewAccountButton();
 
         Assert.assertTrue(openNewAccountPage.hasNewAccountIdCreate());

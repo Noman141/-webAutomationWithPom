@@ -1,5 +1,6 @@
 package com.parabank.pages;
 
+import com.parabank.util.General;
 import com.parabank.util.ParaBankString;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -12,6 +13,7 @@ public class FundTransferPage extends BasePage{
 
     // Fill Transfer Amount field
     public FundTransferPage fillAmountField( double amount ){
+        General.waitForDomStable();
         getWebElement(By.id("amount")).sendKeys(String.valueOf(amount)); //String value conversion to int
         return this;
 

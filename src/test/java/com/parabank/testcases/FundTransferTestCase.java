@@ -16,8 +16,8 @@ public class FundTransferTestCase extends BaseTest {
 
         FundTransferPage fundTransferPage = homePage.clickFundTransferLink()
                 .fillAmountField(1000)
-                .selectFromAccount(1)
-                .selectToAccount(1)
+                .selectFromAccount(0)
+                .selectToAccount(0)
                 .clickTransferButton();
 
         Assert.assertTrue(fundTransferPage.hasFundTransferSuccess());

@@ -28,7 +28,7 @@ public class CustomerLoginTestCase extends BaseTest{
         Assert.assertTrue(loginPage.hasError());
     }
 
-    @Test(enabled = false)
+    @Test
     public void SuccessfulLogin(){
          HomePage homePage = page.getInstance(CustomerLoginPage.class)
                 .loginWithCredentials(getUsername() ,getPassword());
