@@ -9,4 +9,8 @@ public class ParaBankString {
     final static public String PROFILE_UPDATE_SUCCESS = "Profile Updated";
     //Loan Request Processed
     final static public String LOAN_REQUEST_PROCESSED = "Loan Request Processed";
+    //Bill Payment Complete
+    final static public String BILL_PAYMENT_COMPLETE = "Bill Payment Complete";
+    //Transaction Results
+    final static public String TRANSACTION_RESULTS = "Transaction Results";
 }

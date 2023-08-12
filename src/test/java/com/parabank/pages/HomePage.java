@@ -42,4 +42,15 @@ public class HomePage extends BasePage{
         getWebElement(By.linkText("Accounts Overview")).click();
         return getInstance(AccountOverviewPage.class);
     }
+
+    //Bill Pay
+    public BillPayPage clickBillPayLink(){
+        getWebElement(By.linkText("Bill Pay")).click();
+        return getInstance(BillPayPage.class);
+    }
+    //Find Transactions
+    public FindTransactionsPage clickFindTransaction(){
+        getWebElement(By.linkText("Find Transactions")).click();
+        return getInstance(FindTransactionsPage.class);
+    }
 }
